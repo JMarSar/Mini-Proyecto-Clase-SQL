@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles2.css">
+        <title>Mini Proyecto Final SQL</title>
+</head>
+<body>
+        <section class="nav">
+                <a href="index.html">Estudiantes</a>
+                <a href="notas.html">Notas</a>
+                <a href="medias.html" style="color: white; font-size: 20px;">Medias</a>
+        </section>
+        <main>
+                <section class="top-container">
+                        <article id="app"></article>
+                </section>
+
+                <section class="bottom-container">
+                        <article class="bottom-container-item">
+                                <h1>Media</h1>
+                                <form action="Post">
+                                        <input type="text" name="media_id" id="media_id" placeholder="id_alumno">
+                                </form>
+                                <input type="button" value="Mostrar media" id="mostrar_medias" class="boton">
+                        </article>
+                        <article class="bottom-container-item">
+                                <h1>Apuntadas</h1>
+                                <form action="Post">
+                                        <input type="text" name="apuntadas" id="apuntadas_id" placeholder="id_alumno">
+                                </form>
+                                <input type="button" value="Mostrar apuntadas" id="mostrar_apuntadas" class="boton">
+                        </article>
+                        <article class="bottom-container-item">
+                                <h1>Impartidas</h1>
+                                <form action="Post">
+                                        <input type="text" name="impartidas" id="impartidas_id" placeholder="teacher_id">
+                                </form>
+                                <input type="button" value="Mostrar impartidas" id="mostrar_impartidas" class="boton">
+                        </article>
+                </section>
+        </main>
+        <script src="script_medias.js" type="module"></script>
+</body>
+</html>

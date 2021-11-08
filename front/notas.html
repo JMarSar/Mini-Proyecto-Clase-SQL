@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles.css">
+        <title>Mini Proyecto Final SQL</title>
+</head>
+<body>
+        <section class="nav">
+                <a href="index.html">Estudiantes</a>
+                <a href="#" style="color: white; font-size: 20px;">Notas</a>
+                <a href="medias.html">Medias</a>
+        </section>
+        <main>
+                <section class="top-container">
+                        <article id="app"></article>
+                </section>
+
+                <section class="bottom-container">
+                        <article class="bottom-container-item">
+                                <h1>Mostrar notas</h1>
+                                <form action="Post">
+                                        <input type="text" name="input_id" id="input_id" placeholder="id">
+                                </form>
+                                <input type="button" value="Mostrar" id="mostrar_notas" class="boton">
+                        </article>
+                        <article class="bottom-container-item">
+                                <h1>Crear notas</h1>
+                                <form action="post">
+                                        <input type="text" name="student_id" id="student_id_crear" placeholder="student_id">
+                                        <input type="text" name="subject_id" id="subject_id_crear" placeholder="subject_id">
+                                        <input type="text" name="date" id="date_crear" placeholder="date">
+                                        <input type="text" name="mark" id="mark_crear" placeholder="mark">
+                                </form>
+                                <input type="button" value="Crear" id="crear_notas" class="boton">
+                        </article>
+                        <article class="bottom-container-item">
+                                <h1>Actualizar notas</h1>
+                                <form action="">
+                                        <input type="text" name="mark_id" id="mark_id_actualizar" placeholder="mark_id">
+                                        <input type="text" name="student_id" id="student_id_actualizar" placeholder="student_id">
+                                        <input type="text" name="subject_id" id="subject_id_actualizar" placeholder="subject_id">
+                                        <input type="text" name="date" id="date_actualizar" placeholder="date">
+                                        <input type="text" name="mark" id="mark_actualizar" placeholder="mark">
+                                </form>
+                                <input type="button" value="Actualizar" id="actualizar_notas" class="boton">
+                        </article>
+                        <article class="bottom-container-item">
+                                <h1>Eliminar notas</h1>
+                                <form action="get">
+                                        <input type="text" name="mark_id" id="mark_id_eliminar" placeholder="mark_id">                                    
+                                </form>
+                                <input type="button" value="Eliminar" id="eliminar" class="boton">
+                        </article>
+                </section>
+        </main>
+        <script src="script_notas.js" type="module"></script>
+</body>
+</html>

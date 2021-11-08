@@ -1,0 +1,122 @@
+:root {
+        --borderColor: #dcffff;
+        --backgroundColor: #b2dafa;
+        --panelsColor: #5086c1;
+        --buttonNormalColor: #84b6f4;
+        --buttonHoverColor: #dcffff;
+        --buttonActiveColor: #6a9eda;
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+}
+
+main {
+        height: 100vh;
+        background-color: var(--backgroundColor);
+}
+
+.nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        background-color: var(--panelsColor);
+}
+.nav a {
+        color: var(--buttonHoverColor);
+        text-decoration: none;
+}
+
+.top-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40%;
+        width: 100%;
+        padding: 00px 50px;
+}
+#app{
+        padding: 10px 15px;
+        height: 90%;
+        width: 100%;
+        border: 4px solid var(--borderColor);
+        border-radius: 20px  20px 0 0;
+        color: var(--borderColor);
+        background-color: var(--panelsColor);
+        overflow: scroll;
+}
+#app li:hover {
+        padding: 3px 15px;
+        width: fit-content;
+        color: var(--panelsColor);
+        background-color: var(--buttonHoverColor);
+}
+
+.bottom-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 60%;
+        width: 100%;
+        padding: 0px 50px 10px 50px;
+}
+.bottom-container-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 24%;
+        border: 4px solid var(--borderColor);
+        border-radius: 0  0 20px 20px;
+        color: var(--borderColor);
+        background-color: var(--panelsColor);
+}
+.bottom-container-item form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 70%;
+        overflow: hidden;
+}
+.bottom-container-item form input{
+        width: 80%;
+        height: 5vh;
+        margin-bottom: 1.5vh;
+        padding:10px;
+        border: 4px solid var(--borderColor);
+        color: var(--panelsColor);
+
+}
+.bottom-container-item h1{
+        font-size: 21px;
+        padding-left: 35px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+}
+::placeholder{
+        color: var(--panelsColor);
+}
+
+.boton {
+        width: 100%;
+        height: 10%;
+        border: none;
+        color: var(--borderColor);
+        border-radius: 0  0 15px 15px;
+        background-color: var(--buttonNormalColor);
+        font-size: 21px;
+}
+.boton:hover {
+        color: var(--panelsColor);
+        background-color: var(--buttonHoverColor);
+}
+.boton:active {
+        color: var(--borderColor);
+        background-color: var(--buttonActiveColor);
+}
